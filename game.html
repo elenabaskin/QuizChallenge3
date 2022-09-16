@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="game.css" />
+    <title>Cookie Counter</title>
+  </head>
+  <body>
+    <!--game beginning-->
+    <div class="game">
+      <!--main title-->
+      <h1>Cookie Counter Game!</h1>
+
+      <!--game description-->
+      <main>
+        Click the cookie and add to your total! Get upgrades as you increase
+        your cookie count!
+      </main>
+
+      <!--actual cookie clicker-->
+      <section class="mainGame">
+        <div class="counter">
+          <div class="currentNum">0</div>
+        </div>
+        <div class="cookie">
+          <button class="bigCookie" onclick="amount()">
+            <img
+              src="/images/BigCookie.png"
+              alt="sugar cookie with white frosting"
+            />
+          </button>
+        </div>
+      </section>
+
+      <!--store for leveling up-->
+      <section class="bonusGame">
+        <h3>Upgrades</h3>
+        <div class="upgrades">
+          <button class="upgradeOne" onclick="firstUpgrade()">
+            <img class="first" src="/images/Milk.png" alt="cup of milk" />
+          </button>
+          <button class="upgradeTwo" onclick="secondUpgrade()">
+            <img
+              class="second"
+              src="/images/HandMixer.png"
+              alt="pastel purple hand mixer"
+            />
+          </button>
+          <button class="upgradeThree" onclick="thirdUpgrade()">
+            <img
+              class="third"
+              src="/images/CookieDish.png"
+              alt="vintage plate"
+            />
+          </button>
+          <button class="upgradeFour" onclick="fourthUpgrade()">
+            <img
+              class="fourth"
+              src="/images/LittleCookie.webp"
+              alt="sugar cookie with pink frosting"
+            />
+          </button>
+        </div>
+      </section>
+
+      <!--end of game-->
+    </div>
+    <script src="game.js"></script>
+  </body>
+</html>

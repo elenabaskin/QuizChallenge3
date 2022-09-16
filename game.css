@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: radial-gradient(#dcd3ff, #fbe4ff, #ffffd1);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+h1 {
+  text-align: center;
+  color: #f3ffe3;
+  -webkit-text-stroke-color: #f6a6ff;
+  -webkit-text-stroke-width: 1px;
+  font-family: "Nunito", sans-serif;
+  font-size: 50px;
+}
+
+main {
+  text-align: center;
+  color: #afcbff;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+}
+
+.counter {
+  font-size: 40px;
+  text-align: center;
+  color: #afcbff;
+  font-family: "Nunito", sans-serif;
+}
+
+img[src*="BigCookie"] {
+  width: 325px;
+  height: 325px;
+  object-fit: contain;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cookie {
+  text-align: center;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+}
+
+h3 {
+  text-align: center;
+  font-size: 30px;
+  color: #f3ffe3;
+  -webkit-text-stroke-color: #97a2ff;
+  -webkit-text-stroke-width: 1px;
+  font-family: "Nunito", sans-serif;
+}
+
+/* upgrade images (hidden until unlocked) */
+img[src*="Milk"],
+img[src*="HandMixer"],
+img[src*="CookieDish"],
+img[src*="LittleCookie"] {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  visibility: hidden;
+}
+
+.upgrades {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
